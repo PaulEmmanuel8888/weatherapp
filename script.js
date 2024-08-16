@@ -5,9 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiKey = "898424a2cee901dbe9db0b602bdab9bf";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
+    const timeUrl = "https://api.ipgeolocation.io/timezone?apiKey="
+    const timeApiKey = "6710c04b48dd416a83475e1a030a8d52"
+
     const searchBox = document.querySelector('.search input');
     const searchBtn = document.querySelector('.search button');
     const weatherIcon = document.querySelector('.weather-icon');
+
+    async function checkTime(data) {
+        const time = await fetch(timeUrl + timeApiKey + `&lat=${data.coord.lat}` + `&long=${data.coord.lon}`)
+        currentTime = await time.json()
+        document.querySelector('.time').innerHTML = currentTime.time_12;
+    }
 
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -19,9 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         else {
-            var data = await response.json();
-
-            console.log(data)
+            const data = await response.json();
+            checkTime(data);
 
             document.querySelector('.city').innerHTML = data.name + ` (${data.sys.country})`;
             document.querySelector('.temp').innerHTML = Math.round(data.main.temp)  + "°c";
