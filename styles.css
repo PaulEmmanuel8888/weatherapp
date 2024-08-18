@@ -341,3 +341,117 @@ body {
         width: 3rem;
     }
 }
+@media (max-width:350px) {
+    .card {
+        width: 80%;
+        max-width: 470px;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        color: #fff;
+        margin: 20px auto 0;
+        border-radius: 20px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 1px 5px;
+        height: 2rem;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 4px;
+        font-size: 0.7rem;
+    }
+
+    .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        margin-left: 4px;
+        width: 1.8rem;
+        height: 1.8rem;
+        cursor: pointer;
+    }
+
+    .search button img {
+        width: 0.7rem;
+    }
+    .weather-icon {
+        width: 6rem;
+        margin-top: 25px;
+    }
+    
+    .weather h1 {
+        font-size: 2.7rem;
+        font-weight: 500;
+    }
+    
+    .weather h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: -10px;
+    
+    }
+    
+    .weather .time {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+    
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+        margin-top: 25px;
+    }
+    
+    .col {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .col img {
+        width: 1.9rem;
+        margin-right: 10px;
+    }
+
+    .text{
+        font-size: 0.7rem;
+    }
+    
+    .humidity, .wind {
+        font-size: 0.6rem;
+        margin-top: -6px;
+    }
+    
+    .weather {
+        display: none;
+    }
+    
+    .error {
+        text-align: center; 
+        margin-left: 10px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+        font-weight: 500;
+        display: none;
+    }
+    
+    .error-img {
+        width: 3rem;
+    }
+}
