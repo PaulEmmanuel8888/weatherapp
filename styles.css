@@ -32,6 +32,7 @@ body {
 .search input {
     border: 0;
     outline: 0;
+    text-align: center;
     background: #ebfffc;
     color: #555;
     padding: 10px 25px;
@@ -143,6 +144,7 @@ body {
     .search input {
         border: 0;
         outline: 0;
+        text-align: center;
         background: #ebfffc;
         color: #555;
         padding: 10px 25px;
@@ -260,6 +262,7 @@ body {
     .search input {
         border: 0;
         outline: 0;
+        text-align: center;
         background: #ebfffc;
         color: #555;
         padding: 1px 7px;
@@ -374,9 +377,10 @@ body {
     .search input {
         border: 0;
         outline: 0;
+        text-align: center;
         background: #ebfffc;
         color: #555;
-        padding: 1px 5px;
+        padding: 1px 0px;
         height: 3rem;
         border-radius: 30px;
         flex: 1;
