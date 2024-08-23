@@ -124,8 +124,8 @@ body {
 
 @media (max-width:600px) {
     .card {
-        width: 80%;
-        max-width: 470px;
+        width: 90%;
+        max-width: 500px;
         background: linear-gradient(135deg, #00feba, #5b548a);
         color: #fff;
         margin: 20px auto 0;
