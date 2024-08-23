@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     
 }
@@ -85,6 +85,7 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 30px;
+    margin-bottom: -10px;
 }
 
 .col {
@@ -144,11 +145,11 @@ body {
         outline: 0;
         background: #ebfffc;
         color: #555;
-        padding: 5px 10px;
+        padding: 10px 25px;
         height: 3.8rem;
         border-radius: 30px;
         flex: 1;
-        margin-right: 8px;
+        margin-right: 13px;
         font-size: 1.1rem;
     }
 
@@ -167,34 +168,40 @@ body {
         width: 1.1rem;
     }
     .weather-icon {
-        width: 7rem;
+        width: 10rem;
         margin-top: 25px;
+        
     }
     
     .weather h1 {
-        font-size: 3.7rem;
+        font-size: 3.8rem;
         font-weight: 500;
+        margin-top: 25px;
+        padding: 2px;
     }
     
     .weather h2 {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-weight: 400;
         margin-top: -10px;
+        
     
     }
     
     .weather .time {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 400;
-        margin-top: 3px;
+        margin-top: 8px;
+        margin-bottom: 5px;
     }
     
     .details {
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 15px;
-        margin-top: 25px;
+        margin-top: 50px;
     }
     
     .col {
@@ -220,18 +227,18 @@ body {
     .error {
         text-align: center; 
         margin-left: 10px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         margin-top: 10px;
         font-weight: 500;
         display: none;
     }
     
     .error-img {
-        width: 4rem;
+        width: 4.5rem;
     }
 }
 
-@media (max-width:440px) {
+@media (max-width:480px) {
     .card {
         width: 80%;
         max-width: 470px;
@@ -269,8 +276,8 @@ body {
         background: #ebfffc;
         border-radius: 50%;
         margin-left: 4px;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
         cursor: pointer;
     }
 
@@ -278,24 +285,27 @@ body {
         width: 0.9rem;
     }
     .weather-icon {
-        width: 6rem;
+        width: 9rem;
         margin-top: 25px;
     }
     
     .weather h1 {
-        font-size: 2.7rem;
+        font-size: 3rem;
         font-weight: 500;
+        padding: 7px;
     }
     
     .weather h2 {
-        font-size: 1.5rem;
+        font-size: 2.4rem;
         font-weight: 400;
         margin-top: -10px;
+        padding: 2px;
+        
     
     }
     
     .weather .time {
-        font-size: 1rem;
+        font-size: 1.7rem;
         font-weight: 400;
         margin-top: 3px;
     }
@@ -309,19 +319,20 @@ body {
     }
     
     .col {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         text-align: left;
     }
     
     .col img {
-        width: 1.9rem;
+        width: 2.2rem;
         margin-right: 10px;
     }
     
     .humidity, .wind {
-        font-size: 1.3rem;
-        margin-top: -6px;
+        font-size: 1.4rem;
+        
     }
     
     .weather {
@@ -331,17 +342,17 @@ body {
     .error {
         text-align: center; 
         margin-left: 10px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin-top: 10px;
         font-weight: 500;
         display: none;
     }
     
     .error-img {
-        width: 3rem;
+        width: 4rem;
     }
 }
-@media (max-width:370px) {
+@media (max-width:410px) {
     .card {
         width: 80%;
         max-width: 470px;
@@ -366,11 +377,11 @@ body {
         background: #ebfffc;
         color: #555;
         padding: 1px 5px;
-        height: 2rem;
+        height: 3rem;
         border-radius: 30px;
         flex: 1;
         margin-right: 4px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .search button {
@@ -379,33 +390,33 @@ body {
         background: #ebfffc;
         border-radius: 50%;
         margin-left: 4px;
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 3rem;
+        height: 3rem;
         cursor: pointer;
     }
 
     .search button img {
-        width: 0.7rem;
+        width: 1rem;
     }
     .weather-icon {
-        width: 6rem;
+        width: 9rem;
         margin-top: 25px;
     }
     
     .weather h1 {
-        font-size: 2.7rem;
+        font-size: 3.3rem;
         font-weight: 500;
     }
     
     .weather h2 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         font-weight: 400;
         margin-top: -10px;
     
     }
     
     .weather .time {
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: 400;
         margin-top: 3px;
     }
@@ -425,16 +436,16 @@ body {
     }
     
     .col img {
-        width: 1.9rem;
+        width: 2rem;
         margin-right: 10px;
     }
 
     .text{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     
     .humidity, .wind {
-        font-size: 0.6rem;
+        font-size: 1.1rem;
         margin-top: -6px;
     }
     
@@ -445,13 +456,13 @@ body {
     .error {
         text-align: center; 
         margin-left: 10px;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         margin-top: 10px;
         font-weight: 500;
         display: none;
     }
     
     .error-img {
-        width: 3rem;
+        width: 3.5rem;
     }
 }
